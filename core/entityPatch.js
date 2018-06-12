@@ -13,11 +13,6 @@ ig.Entity.inject({
 
 	addEvent: function(name) {
 		this.events[name] = new ig.Event(this);
-	},
-
-	encapsulate: function(func) {
-		let that = this;
-		return function() { func.apply(that, arguments); }
 	}
 });
 
