@@ -1,0 +1,71 @@
+div#menu {
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+div.entityDefinition, .entityDefinition span.key, .entityDefinition span.value {
+	white-space: nowrap;
+}
+
+#entityDefinitions {
+	max-height: none !important
+}
+
+div#eventList, div#triggerList {
+	border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+div.event, div.trigger {
+	padding: 2px 0;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	overflow-x: auto;
+}
+
+div#eventList div.name, div#triggerList div.name {
+	color: #fff;
+	font-weight: bold;
+	padding-left: 2px;
+	white-space: nowrap;
+}
+
+div.event div.target, div.trigger div.source {
+	color: #aaa;
+	padding-left: 8px;
+	white-space: nowrap;
+}
+
+div#eventList div.name:hover, div#triggerList div.name:hover {
+	background-color: rgba(255,255,255,0.1);
+}
+
+div.event div.target:hover, div.trigger div.source:hover {
+	background-color: rgba(255,255,255,0.1);
+}
+
+
+#eventMenu, #triggerMenu {
+	background-color: rgba(0,0,0,0.9);
+	display: none;
+	position: absolute;
+	min-width: 100px;
+	max-height:300px;
+	overflow-y: scroll;
+	z-index: 1000;
+}
+
+#eventMenu div, #triggerMenu div {
+	padding: 3px;
+	padding-left: 8px;
+	color: #fff;
+	cursor: pointer;
+	border-top: 1px solid rgba(255,255,255,0);
+	border-bottom: 1px solid rgba(255,255,255,0);
+	-webkit-transition: 0.1s linear;
+}
+
+#eventMenu div:hover, #triggerMenu div:hover {
+	background-color: rgba(255,255,255,0.2);
+	border-top: 1px solid rgba(255,255,255,0.2);
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+}
