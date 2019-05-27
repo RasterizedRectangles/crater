@@ -3,6 +3,8 @@ ig.module(
 )
 .requires(
 	'plugins.crater.core.entityPatch',
-	'plugins.crater.core.event'
+	'plugins.crater.core.gamePatch',
+	'plugins.crater.core.event',
+	'plugins.crater.entities.text'
 )
 .defines(function() {})
